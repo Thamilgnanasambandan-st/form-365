@@ -1,0 +1,362 @@
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .name-field {
+            font-size: 22px;
+        }
+
+        .count-status p {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <!-- As a link -->
+                <nav class="navbar navbar-fixed-top navbar-light py-3 bg-light">
+                    <a class="navbar-brand" href="#">Form 365 - Courier</a>
+                    <a type="button" class="btn ml-auto btn-primary" href="Index.html">Log Out</a>
+                </nav>
+
+            </div>
+            <div class="col-sm-12 my-4">
+                <div class="form-group row">
+                    <label class="col-sm-2 name-field col-form-label">Courier Name : </label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="courierName" placeholder="Enter Courier Name">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <table class="table my-2  table-bordered " cellspacing="2" cellpadding="2">
+                    <thead class="thead-light text-center">
+                        <tr>
+                            <th scope="col" rowspan="2">Ready for pick up</th>
+                            <th scope="col" rowspan="2">Patient</th>
+                            <th scope="col" rowspan="2">Surgeon</th>
+                            <th scope="col" colspan="3">Number of Specimens
+                                <br> + Location
+                            </th>
+                            <th scope="col" rowspan="2">Courier Name</th>
+                            <th scope="col" rowspan="2">Pick up Total</th>
+                            <th scope="col" rowspan="2">Pick up Time</th>
+                            <th scope="col" rowspan="2">Pick up Status</th>
+                        </tr>
+                        <tr>
+                            <th>Basket</th>
+                            <th>Freezer</th>
+                            <th>Fridge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">08:00 21/05/2020</th>
+                            <td class="name">POTTER, Harry MRN: 1234567 DOB: 22/10/1982
+                            </td>
+                            <td>Prof DUMBLEDORE, Albus</td>
+                            <td class="basket-count">4</td>
+                            <td class="freezer-count">1</td>
+                            <td class="fridge-count">1</td>
+                            <td></td>
+                            <td class="text-center">
+                                <div class="count-status"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pickup-total" data-toggle="modal"
+                                    data-target="#staticBackdrop" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z">
+                                    </path>
+                                </svg>
+
+                            </td>
+                            <td class="time"></td>
+                            <td class="pickupStatus">
+                                <select class="custom-select mr-sm-2">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Basket specimen Pending">Basket specimen Pending</option>
+                                    <option value="Freezer specimen Pending">Freezer specimen Pending</option>
+                                    <option value="Fridge specimen Pending">Fridge specimen Pending</option>
+                                    <option value="completed">Completed</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">08:00 21/05/2020</th>
+                            <td class="name">POTTER, Harry MRN: 1234567 DOB: 22/10/1982
+                            </td>
+                            <td>Prof DUMBLEDORE, Albus</td>
+                            <td class="basket-count">4</td>
+                            <td class="freezer-count">1</td>
+                            <td class="fridge-count">1</td>
+                            <td></td>
+                            <td class="text-center">
+                                <div class="count-status"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pickup-total" data-toggle="modal"
+                                    data-target="#staticBackdrop" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z">
+                                    </path>
+                                </svg>
+
+                            </td>
+                            <td class="time"></td>
+                            <td class="pickupStatus">
+                                <select class="custom-select mr-sm-2">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Basket specimen Pending">Basket specimen Pending</option>
+                                    <option value="Freezer specimen Pending">Freezer specimen Pending</option>
+                                    <option value="Fridge specimen Pending">Fridge specimen Pending</option>
+                                    <option value="completed">Completed</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">08:00 22/05/2020</th>
+                            <td class="name">POTTER1, Harry22 MRN: 1234567 DOB: 22/10/1982
+                            </td>
+                            <td>Prof DUMBLEDORE, Albus</td>
+                            <td class="basket-count">4</td>
+                            <td class="freezer-count">2</td>
+                            <td class="fridge-count">1</td>
+                            <td></td>
+                            <td class="text-center">
+                                <div class="count-status"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pickup-total" data-toggle="modal"
+                                    data-target="#staticBackdrop" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z">
+                                    </path>
+                                </svg>
+                            </td>
+                            <td class="time"></td>
+                            <td class="pickupStatus">
+                                <select class="custom-select mr-sm-2">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Basket specimen Pending">Basket specimen Pending</option>
+                                    <option value="Freezer specimen Pending">Freezer specimen Pending</option>
+                                    <option value="Fridge specimen Pending">Fridge specimen Pending</option>
+                                    <option value="completed">Completed</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Enter Value</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control modal-data form-control-sm" type="number" max="6"
+                        placeholder="Enter Total">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn update btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="alert" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error Alert</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-danger">Please Enter below Total Count</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#courierName").keyup(function () {
+                var nameUpdate = $("#courierName").val();
+                $("table > tbody > tr td:nth-child(7)").text(nameUpdate);
+            });
+            var index = 1;
+            index = get(index);
+
+            function get(index1) {
+                index += index;
+                return index;
+            }
+
+            function getValue(thisObj) {
+                var enterValue = "";
+                var basket = parseInt(thisObj.closest("tr").find(".basket-count").text());
+                var freezer = parseInt(thisObj.closest("tr").find(".freezer-count").text());
+                var fridge = parseInt(thisObj.closest("tr").find(".fridge-count").text());
+                var total = basket + freezer + fridge;
+                return total;
+            }
+
+            function checkTotal(parent, total, enterValue) {
+                var check = parseInt(
+                    $(parent).closest("tr").find(".count-status > p").text()
+                );
+                if (isNaN(check)) check = 0;
+                var digits = check.toString().split("");
+                var realDigits = digits.map(Number);
+                var sum = 0;
+
+                function compare() {
+                    if (total == sum) {
+                        $(parent)
+                            .closest("tr")
+                            .find(".custom-select")
+                            .val("completed")
+                            .attr("disabled", "true");
+                        $(parent).css("display", "none");
+                    } else if (total < sum) {
+                        alert("check count value");
+                    } else {
+                        $(parent).closest("tr").find(".pickup-total").css("display", "inline");
+                    }
+                }
+
+                $(realDigits).each(function () {
+                    sum += this;
+                    compare();
+                });
+            }
+
+            function sumCheck(parent, total) {
+                var check = parseInt(
+                    $(parent).closest("tr").find(".count-status > p").text()
+                );
+                if (isNaN(check)) check = 0;
+                var digits = check.toString().split("");
+                var realDigits = digits.map(Number);
+                var sum = 0;
+                $(realDigits).each(function () {
+                    sum += this;
+                });
+                return sum;
+            }
+
+            $(".pickup-total").on("click", function () {
+                $(".modal-data").val("");
+                var parent = this;
+                var total = getValue($(this));
+                checkTotal($(this), total);
+                var sum = sumCheck($(this), total);
+
+                $(".update").one("click", function () {
+                    var enterValue = $(".modal-data").val();
+                    if (enterValue <= total - sum) {
+                        if (enterValue !== "") {
+                            var index = get(index);
+                            console.log(index);
+                            $(parent)
+                                .parent()
+                                .next()
+                                .append("<p id=" + "time_" + index + ">" + time + "</p>");
+                            $(parent)
+                                .closest("tr")
+                                .find(".count-status")
+                                .append(
+                                    "<p class='text-center my-1' id=" +
+                                    "count_" +
+                                    index +
+                                    ">" +
+                                    enterValue +
+                                    '<i class="fa delete fa-trash" aria-hidden="true"></i></p>'
+                                );
+                        }
+
+                        checkTotal(parent, total, enterValue);
+                    } else {
+                        $("#staticBackdrop").modal("hide");
+                        $("#alert").modal("show");
+                    }
+                    parent = "";
+                    $("#staticBackdrop").modal("hide");
+                });
+                var time = getDateAndTime();
+            });
+
+            $(".count-status").delegate(".delete", "click", function () {
+                $(this)
+                    .closest("tr")
+                    .find(".custom-select")
+                    .val("Pending")
+                    .removeAttr("disabled");
+                $(this).closest("tr").find(".pickup-total").css("display", "inline");
+                var getId = $(this).parent().attr("id");
+                remove(getId);
+                $(this).parent().remove();
+            });
+            function remove(getId) {
+                var time = getId;
+                var temp = time.split("_");
+                time = "time_" + temp[1];
+                $("#" + time + " ").remove();
+            }
+        });
+
+        function getDateAndTime() {
+            var today = new Date();
+            var dateTime = today.toLocaleString();
+            var getDate = dateTime.split(",");
+            var t = getDate[1].slice(1, 6) + "<br>" + getDate[0] + "<br>";
+            return t;
+        }
+
+    </script>
+</body>
+
+</html>
